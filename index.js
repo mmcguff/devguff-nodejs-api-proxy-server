@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.all('/', (req, res) =>{
   const placeholderResponse = {
-    message: "Hello Devguff World!"
+    message: "This was changed from inside the container"
   }
   const response = placeholderResponse;
   return res.status(200).send(response);
